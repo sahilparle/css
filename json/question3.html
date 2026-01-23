@@ -6,13 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>JSON object output</h2>
+    <h2>JSON object for student</h2>
     <p  Roll="result"></p>
     <script>
         let student={
             "name":"Aniket",
-            "age":20,
-            "course":"computer science",
+            "roll_no":20,
             "marks":{
                 "html":85,
                 "css":90,
@@ -20,9 +19,8 @@
             }
         };
         let output="Name:"+student.name+"<br>"+
-        "age:"+student.age+"<br>"+
-        "course:"+student.course+"<br>"+
-        "HTML Marks:"+student.marks.html+"br";
+        "roll no:"+student.roll_no+"<br>"+
+        "HTML Marks:"+student.marks.html+"<br>";
         document.getElementBy Roll("result").innerHTML=output;
     </script>
 </body>
